@@ -1,0 +1,55 @@
+{
+  "scope": "题D需求分析、实现与本地MVP验收，不含后续启动协助、投递沟通、本次统计及重跑",
+  "date": "2026-10-30",
+  "local_time_window": "13:33:22–14:18:08 Asia/Shanghai",
+  "tool": "Codex / OpenAI 编程助手",
+  "model_recorded_in_session_settings": "gpt-6.1-sol",
+  "method": "仅读取当前会话指定阶段的 token_usage_record，按 response_id 去重后求和 usage；不累加累计字段，不发布原始会话。",
+  "totals": {
+    "input_tokens": 8092975,
+    "cached_input_tokens": 7816192,
+    "output_tokens": 35983,
+    "reasoning_output_tokens": 10215,
+    "total_tokens": 8128958,
+    "uncached_input_tokens": 276783
+  },
+  "recorded_calls": 30,
+  "phases": {
+    "需求分析与选型": {
+      "calls": 2,
+      "usage": {
+        "input_tokens": 461482,
+        "cached_input_tokens": 227840,
+        "output_tokens": 2747,
+        "reasoning_output_tokens": 1032,
+        "total_tokens": 464229
+      }
+    },
+    "首版实现与构建排障": {
+      "calls": 15,
+      "usage": {
+        "input_tokens": 3837886,
+        "cached_input_tokens": 3817344,
+        "output_tokens": 17691,
+        "reasoning_output_tokens": 3750,
+        "total_tokens": 3855577
+      }
+    },
+    "恢复验证、边界完善与交付整理": {
+      "calls": 13,
+      "usage": {
+        "input_tokens": 3793607,
+        "cached_input_tokens": 3771008,
+        "output_tokens": 15545,
+        "reasoning_output_tokens": 5433,
+        "total_tokens": 3809152
+      }
+    }
+  },
+  "limits": [
+    "缓存输入已经包含在输入总量中；推理输出已经包含在输出总量中，不能再次相加。",
+    "包含长会话历史重复发送的输入，不是新写代码的 Token 数，也不是账单金额。",
+    "这次采集是已记录请求的阶段快照，不表示未来提交前的累计总量。",
+    "没有单独记录的人工净工时不能从会话跨度反推。"
+  ]
+}
