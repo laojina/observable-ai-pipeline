@@ -2,7 +2,7 @@
 
 源码仓库：https://github.com/laojina/observable-ai-pipeline
 
-这是一个独立的笔试项目，不依赖 VidMind 的代码或运行环境。首版选择 **Java 17、Spring Boot、H2 文件库、单实例执行器和原生 HTML**。没有引入 MQ、Redis 或工作流引擎。
+这是一个独立的笔试项目。首版选择 **Java 17、Spring Boot、H2 文件库、单实例执行器和原生 HTML**。没有引入 MQ、Redis 或工作流引擎。
 
 **实现范围：四个计算阶段全部为显式 Mock，产物为确定性的 JSON 清单，不提供实际视频抽帧、人物替换或生成效果。** 题 D 允许 Mock；本项目重点验证持久化、重试、重启恢复、产物完整性和执行历史。
 
